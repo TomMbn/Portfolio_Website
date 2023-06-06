@@ -2,7 +2,7 @@ import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
 
-function Home(){
+const Home = () => {
     return(
         <section className="home section" id="home">
             <div className="homeContainer container grid">

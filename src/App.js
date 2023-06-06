@@ -4,7 +4,7 @@ import Home from './components/home/Home';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 
-function App() {
+const App = () => {
   return (
     <>
     <Header />

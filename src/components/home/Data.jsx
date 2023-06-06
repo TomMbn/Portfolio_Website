@@ -1,4 +1,4 @@
-function Data(){
+const Data = () => {
     return(
         <div className="homeData">
             <h1 className="homeTitle">Tom Mauboussin</h1>

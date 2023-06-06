@@ -1,6 +1,6 @@
 import "./skills.css"
 
-function Skills(){
+const Skills = () => {
     return(
         <section className="skills section" id="skills">
             <div className="skillsContainer container grid">

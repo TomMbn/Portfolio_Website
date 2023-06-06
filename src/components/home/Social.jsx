@@ -1,4 +1,4 @@
-function Social(){
+const Social = () => {
     return(
         <div className="homeSocial">
             <a href="https://www.linkedin.com/in/tom-mauboussin-865760200" className="homeSocialIcon" target="_blank">
