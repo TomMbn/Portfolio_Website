@@ -1,0 +1,45 @@
+.skillsContainer {
+    grid-template-columns: 1fr 1fr;
+}
+
+.frontendSkills, .backendSkills {
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid var(--title-color);
+    border-radius: 2rem;
+}
+
+.frontendSkills h3, .backendSkills h3 {
+    margin-bottom: var(--mb-2);
+}
+
+.technologies {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.technology {
+    transition: transform 0.2s ease-in-out;
+}
+
+.technology:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 992px) {
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skillsContainer {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    
+  }
+  
+  @media screen and (max-width: 350px) {
+  }
