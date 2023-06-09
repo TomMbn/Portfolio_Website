@@ -1,0 +1,60 @@
+/* Style de la fenêtre modale */
+.workItemModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.workItemModal.active {
+  display: flex;
+}
+
+/* Contenu de la fenêtre modale */
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.modalContentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Bouton de fermeture */
+.uil-times {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* Style de l'image du projet */
+.modalImage {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+  margin-bottom: 10px;
+}
+
+/* Style des titres */
+.modalContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style de la description */
+.modalContent p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
