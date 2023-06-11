@@ -12,7 +12,7 @@ export const projectsData = [
         category: "Frontend", 
         github: "https://github.com/TomMbn/Project-2-HTML-CSS-",
         description: "For this project, I created the homepage of Booki, a travel agency. The homepage allows users to view available accommodations in a chosen city and also explore the activities to do in that city. In this case, my task was limited to integration, so the user cannot select a specific city, the default city is Marseille",
-        stack: "HTML , CSS"
+        stack: "HTML, CSS"
     },
     {
         id: 2,
