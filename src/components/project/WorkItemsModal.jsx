@@ -16,7 +16,7 @@ const WorkItemsModal = ({item}) => {
         <div className="modalContent">
             <div className="modalContentHeader">
                 <h2 className="modalTitle">{item.title}</h2>
-                <i class="uil uil-times" onClick={() => closeModal(item)}></i>
+                <i className="uil uil-times" onClick={() => closeModal(item)}></i>
             </div>
             <img src={item.image} alt={item.title} className="modalImage"/>
             <p className="projectDescription"><strong>Description : </strong>{item.description}</p>
