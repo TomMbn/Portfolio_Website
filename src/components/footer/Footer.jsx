@@ -8,7 +8,7 @@ const Footer = () => {
 
                 <ul className="footerList">
                     <li>
-                        <a href="#about" className="footerLink">About</a>
+                        <a href="#home" className="footerLink">About</a>
                     </li>
                     <li>
                         <a href="#skills" className="footerLink">Skills</a>
@@ -18,10 +18,10 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footerSocial">
-                    <a href="https://www.linkedin.com/in/tom-mauboussin-865760200" className="homeSocialIcon" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/tom-mauboussin-865760200" aria-label="Linkedin" className="homeSocialIcon" target="_blank" rel="noreferrer">
                         <i className="uil uil-linkedin-alt"></i>
                     </a>
-                    <a href="https://github.com/TomMbn" className="homeSocialIcon" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/TomMbn" aria-label="Github" className="homeSocialIcon" target="_blank" rel="noreferrer">
                         <i className="uil uil-github-alt"></i>
                     </a>
                 </div>

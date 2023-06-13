@@ -1,8 +1,8 @@
-import Booki from "../../assets/bookiIMG.PNG";
-import SophieBuel from "../../assets/SophieBuel.PNG";
-import NinaCarducci from "../../assets/NinaCarducci.PNG";
-import Kasa from "../../assets/Kasa.PNG";
-import VieuxGrimoire from "../../assets/VieuxGrimoire.PNG";
+import Booki from "../../assets/Resize/bookiIMG.webp";
+import SophieBuel from "../../assets/Resize/SophieBuel.webp";
+import NinaCarducci from "../../assets/Resize/NinaCarducci.webp";
+import Kasa from "../../assets/Resize/Kasa.webp";
+import VieuxGrimoire from "../../assets/Resize/VieuxGrimoire.webp";
 
 export const projectsData = [
     {
