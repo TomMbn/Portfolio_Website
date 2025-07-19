@@ -18,11 +18,13 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footerSocial">
-                    <a href="https://www.linkedin.com/in/tom-mauboussin-865760200" aria-label="Linkedin" className="homeSocialIcon" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/tommauboussin" aria-label="LinkedIn profile of Tom Mauboussin" className="homeSocialIcon" target="_blank" rel="noopener noreferrer">
                         <i className="uil uil-linkedin-alt"></i>
+                        <span className="visually-hidden">LinkedIn profile of Tom Mauboussin</span>
                     </a>
-                    <a href="https://github.com/TomMbn" aria-label="Github" className="homeSocialIcon" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/TomMbn" aria-label="GitHub profile of Tom Mauboussin" className="homeSocialIcon" target="_blank" rel="noopener noreferrer">
                         <i className="uil uil-github-alt"></i>
+                        <span className="visually-hidden">GitHub profile of Tom Mauboussin</span>
                     </a>
                 </div>
             </div>
