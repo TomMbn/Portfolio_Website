@@ -1,4 +1,4 @@
-import CV from "../../assets/CV_Portfolio.pdf";
+import CV from "../../assets/Resume_Tom_Mauboussin.pdf";
 
 const Data = () => {
     return(
@@ -27,7 +27,7 @@ const Data = () => {
                     ></path>
                 </svg>
             </a>
-            <a download="CV_Tom_MAUBOUSSIN" href={CV} className="button buttonFlex" id="downloadCV">
+            <a download="Resume_Tom_MAUBOUSSIN" href={CV} className="button buttonFlex" id="downloadCV">
                 Download CV
                 <svg
                 className="button__icon"
