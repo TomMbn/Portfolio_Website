@@ -4,8 +4,8 @@ const Data = () => {
     return(
         <div className="homeData">
             <h1 className="homeTitle">Tom Mauboussin</h1>
-            <h3 className="homeSubtitle">Full Stack Developper</h3>
-            <p className="homeDescription">My name is Tom Mauboussin and I'm a Full Stack developper.  I can develop dynamic and responsive user interfaces. On the back end, I can create robust server-side applications. Additionally, I have expertise in working with databases, ensuring efficient data storage and retrieval for seamless application performance. Through my skills in Full Stack development, I can seamlessly integrate front-end and back-end technologies to deliver scalable and efficient solutions.</p>
+            <h3 className="homeSubtitle">Full Stack Developer</h3>
+            <p className="homeDescription">My name is Tom Mauboussin and I'm a Full Stack developer.  I can develop dynamic and responsive user interfaces. On the back end, I can create robust server-side applications. Additionally, I have expertise in working with databases, ensuring efficient data storage and retrieval for seamless application performance. Through my skills in Full Stack development, I can seamlessly integrate front-end and back-end technologies to deliver scalable and efficient solutions.</p>
             <div className="buttonWrapper">
             <a href="#contact" className="button buttonFlex">
                 Contact me  
