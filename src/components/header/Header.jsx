@@ -2,18 +2,18 @@ import { useState } from "react";
 import "./header.css";
 
 const Header = () => {
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
-        if (this.scrollY >= 80) 
+        if (this.scrollY >= 80)
             header.classList.add("scrollHeader")
         else
             header.classList.remove("scrollHeader");
     });
 
-    const[Toggle, showMenu] = useState(false);
-    const[activeNav, setActiveNav]= useState("#home");
+    const [Toggle, showMenu] = useState(false);
+    const [activeNav, setActiveNav] = useState("#home");
 
-    return(
+    return (
         <header className="header">
             <nav className="nav container">
                 <a href="index.html" className="navLogo">Tom Mauboussin</a>
@@ -36,7 +36,13 @@ const Header = () => {
                             <a href="#skills" className={activeNav === "#skills" ? "navLink activeLink" : "navLink"} onClick={() => setActiveNav("#skills")}>
                                 <i className="uil uil-file-alt navIcon"></i> Skills
                             </a>
-                        </li>                      
+                        </li>
+
+                        <li className="navItem">
+                            <a href="#experience" className={activeNav === "#experience" ? "navLink activeLink" : "navLink"} onClick={() => setActiveNav("#experience")}>
+                                <i className="uil uil-briefcase-alt navIcon"></i> Experience
+                            </a>
+                        </li>
 
                         <li className="navItem">
                             <a href="#portfolio" className={activeNav === "#portfolio" ? "navLink activeLink" : "navLink"} onClick={() => setActiveNav("#portolio")}>
@@ -51,10 +57,10 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <i className="uil uil-times navClose" onClick={()=> showMenu(!Toggle)}></i>
+                    <i className="uil uil-times navClose" onClick={() => showMenu(!Toggle)}></i>
                 </div>
 
-                <div className="navToggle" onClick={()=> showMenu(!Toggle)}>
+                <div className="navToggle" onClick={() => showMenu(!Toggle)}>
                     <i className="uil uil-apps"></i>
                 </div>
             </nav>
