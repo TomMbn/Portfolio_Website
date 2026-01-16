@@ -1,7 +1,7 @@
 import "./footer.css"
 
 const Footer = () => {
-    return(
+    return (
         <footer className="footer">
             <div className="footerContainer container">
                 <h2 className="footerTitle">Tom Mauboussin</h2>
@@ -12,6 +12,9 @@ const Footer = () => {
                     </li>
                     <li>
                         <a href="#skills" className="footerLink">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#experience" className="footerLink">Experience</a>
                     </li>
                     <li>
                         <a href="#portfolio" className="footerLink">Projects</a>

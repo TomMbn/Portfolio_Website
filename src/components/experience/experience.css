@@ -69,9 +69,40 @@
     color: var(--title-color);
 }
 
+.experienceTechStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: var(--mb-1-5);
+    padding-top: var(--mb-1);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    justify-content: center;
+}
+
+.techBadge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--first-color-lighter);
+    color: var(--title-color);
+    border-radius: 0.5rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    transition: all 0.3s;
+}
+
+.techBadge:hover {
+    background-color: var(--first-color-light);
+    transform: translateY(-2px);
+}
+
 /* Responsive */
 @media screen and (max-width: 576px) {
     .experienceContent {
         padding: 1.5rem;
+    }
+
+    .techBadge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
     }
 }

@@ -32,6 +32,13 @@ const Experience = () => {
                             <p>Collaborative work using Agile Methodology.</p>
                         </div>
                     </div>
+
+                    <div className="experienceTechStack">
+                        <span className="techBadge">Laravel</span>
+                        <span className="techBadge">MySQL</span>
+                        <span className="techBadge">Docker</span>
+                        <span className="techBadge">GitLab</span>
+                    </div>
                 </div>
             </div>
         </section>
