@@ -34,6 +34,7 @@ export const trackPageView = (path, title) => {
  * @param {string} label - Link label
  */
 export const trackExternalLink = (url, label) => {
+    console.log('🔗 Tracking external link:', url, label);
     trackEvent('external_link_click', {
         link_url: url,
         link_label: label,
