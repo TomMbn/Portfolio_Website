@@ -1,4 +1,6 @@
 import "./footer.css"
+import { trackExternalLink } from "../../utils/analytics";
+
 
 const Footer = () => {
     return (
@@ -21,11 +23,25 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footerSocial">
-                    <a href="https://www.linkedin.com/in/tommauboussin" aria-label="LinkedIn profile of Tom Mauboussin" className="homeSocialIcon" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href="https://www.linkedin.com/in/tommauboussin"
+                        aria-label="LinkedIn profile of Tom Mauboussin"
+                        className="homeSocialIcon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => trackExternalLink('https://www.linkedin.com/in/tommauboussin', 'LinkedIn')}
+                    >
                         <i className="uil uil-linkedin-alt"></i>
                         <span className="visually-hidden">LinkedIn profile of Tom Mauboussin</span>
                     </a>
-                    <a href="https://github.com/TomMbn" aria-label="GitHub profile of Tom Mauboussin" className="homeSocialIcon" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href="https://github.com/TomMbn"
+                        aria-label="GitHub profile of Tom Mauboussin"
+                        className="homeSocialIcon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => trackExternalLink('https://github.com/TomMbn', 'GitHub Profile')}
+                    >
                         <i className="uil uil-github-alt"></i>
                         <span className="visually-hidden">GitHub profile of Tom Mauboussin</span>
                     </a>

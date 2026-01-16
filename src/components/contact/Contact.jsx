@@ -2,6 +2,8 @@ import "./contact.css";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from "../../hooks/useTranslation";
+import { trackContactSubmission, trackExternalLink } from "../../utils/analytics";
+
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -11,6 +13,9 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm('service_ilduiob', 'template_01pyde6', form.current, 'YywkRTXWLls0MlERe')
+            .then(() => {
+                trackContactSubmission('email_form');
+            });
         e.target.reset();
     };
 
@@ -25,7 +30,13 @@ const Contact = () => {
                             <i className="bx bx-mail-send contactCardIcon"></i>
                             <h3 className="contactCardTitle">{t('contact.email')}</h3>
                             <span className="contactCardData">tom.mauboussin@icloud.com</span>
-                            <a href="mailto:tom.mauboussin@icloud.com" className="contactButton" target="_blank" rel="noreferrer">
+                            <a
+                                href="mailto:tom.mauboussin@icloud.com"
+                                className="contactButton"
+                                target="_blank"
+                                rel="noreferrer"
+                                onClick={() => trackExternalLink('mailto:tom.mauboussin@icloud.com', 'Email')}
+                            >
                                 {t('contact.writeMe')}
                                 <i className="bx bx-right-arrow-alt"></i>
                             </a>
@@ -34,7 +45,13 @@ const Contact = () => {
                             <i className="bx bxl-whatsapp contactCardIcon"></i>
                             <h3 className="contactCardTitle">{t('contact.phone')}</h3>
                             <span className="contactCardData">+33 7 54 83 24 99</span>
-                            <a href="https://api.whatsapp.com/send?phone=33754832499" className="contactButton" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=33754832499"
+                                className="contactButton"
+                                target="_blank"
+                                rel="noreferrer"
+                                onClick={() => trackExternalLink('https://api.whatsapp.com/send?phone=33754832499', 'WhatsApp')}
+                            >
                                 {t('contact.textMe')}
                                 <i className="bx bx-right-arrow-alt"></i>
                             </a>

@@ -1,6 +1,8 @@
 import CV_EN from "../../assets/Resume_Tom_Mauboussin.pdf";
 import CV_FR from "../../assets/CV_Tom_Mauboussin.pdf";
 import { useTranslation } from "../../hooks/useTranslation";
+import { trackCVDownload } from "../../utils/analytics";
+
 
 const Data = () => {
   const { t, language } = useTranslation();
@@ -32,7 +34,13 @@ const Data = () => {
             ></path>
           </svg>
         </a>
-        <a download={language === 'en' ? "Resume_Tom_MAUBOUSSIN" : "CV_Tom_MAUBOUSSIN"} href={CV} className="button buttonFlex" id="downloadCV">
+        <a
+          download={language === 'en' ? "Resume_Tom_MAUBOUSSIN" : "CV_Tom_MAUBOUSSIN"}
+          href={CV}
+          className="button buttonFlex"
+          id="downloadCV"
+          onClick={() => trackCVDownload(language)}
+        >
           {t('home.downloadCV')}
           <svg
             className="button__icon"
