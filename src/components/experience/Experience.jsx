@@ -1,35 +1,38 @@
 import "./experience.css";
+import { useTranslation } from "../../hooks/useTranslation";
 
 const Experience = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="experience section" id="experience">
-            <h2 className="sectionTitle">Experience</h2>
-            <span className="sectionSubtitle">My professional journey</span>
+            <h2 className="sectionTitle">{t('experience.title')}</h2>
+            <span className="sectionSubtitle">{t('experience.subtitle')}</span>
 
             <div className="experienceContainer container grid">
                 <div className="experienceContent">
                     <i className="uil uil-briefcase-alt experienceIcon"></i>
 
-                    <h3 className="experienceTitle">Full Stack Developer</h3>
-                    <span className="experienceSubtitle">Izentit - Trélazé</span>
+                    <h3 className="experienceTitle">{t('experience.jobTitle')}</h3>
+                    <span className="experienceSubtitle">{t('experience.company')}</span>
 
                     <div className="experienceDate">
                         <i className="uil uil-calendar-alt"></i>
-                        2024 - Present (Apprenticeship)
+                        {t('experience.date')}
                     </div>
 
                     <div className="experienceDescription">
                         <div className="experienceItem">
                             <i className="uil uil-check-circle experienceItemIcon"></i>
-                            <p>Backend Development with Laravel & MySQL.</p>
+                            <p>{t('experience.task1')}</p>
                         </div>
                         <div className="experienceItem">
                             <i className="uil uil-check-circle experienceItemIcon"></i>
-                            <p>Docker Container Management & CI/CD with GitLab.</p>
+                            <p>{t('experience.task2')}</p>
                         </div>
                         <div className="experienceItem">
                             <i className="uil uil-check-circle experienceItemIcon"></i>
-                            <p>Collaborative work using Agile Methodology.</p>
+                            <p>{t('experience.task3')}</p>
                         </div>
                     </div>
 

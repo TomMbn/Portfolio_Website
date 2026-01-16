@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { projectsData } from './Data'
-import { projectsCategories } from './Data'
+import { getProjectsData, getProjectsCategories } from './Data'
 import WorkItems from './WorkItems'
 import WorkItemsModal from './WorkItemsModal'
+import { useTranslation } from '../../hooks/useTranslation'
 
 const Works = () => {
-  const [item, setItem] = useState({name: "all"});
+  const { t } = useTranslation();
+  const projectsData = getProjectsData(t);
+  const projectsCategories = getProjectsCategories(t);
+
+  const [item, setItem] = useState({ name: t('projects.categories.all') });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if(item.name === "all") {
+    if (item.name === t('projects.categories.all')) {
       setProjects(projectsData)
     }
     else {
@@ -20,7 +24,7 @@ const Works = () => {
       })
       setProjects(newProjects);
     }
-  }, [item]);
+  }, [item, projectsData, t]);
 
   const handleClick = (e, index) => {
     setItem({ name: e.target.textContent })
@@ -30,23 +34,23 @@ const Works = () => {
   return (
     <>
       <div className="workFilters">
-          {projectsCategories.map((item, index) => {
-              return(
-                  <span className={`${active === index ? "activeWork" : ""} workItem`} key={index} onClick={(e) => {
-                    handleClick(e, index);
-                  }}>{item.name}</span>
-              )
-          })}
+        {projectsCategories.map((item, index) => {
+          return (
+            <span className={`${active === index ? "activeWork" : ""} workItem`} key={index} onClick={(e) => {
+              handleClick(e, index);
+            }}>{item.name}</span>
+          )
+        })}
       </div>
       <div className="workContainer container grid">
-          {projects.map((item) => {
-            return (
-              <div key={item.id}>
-                <WorkItems item={item} key={item.id} />
-                <WorkItemsModal item={item} />
-              </div>
-            )
-          })}
+        {projects.map((item) => {
+          return (
+            <div key={item.id}>
+              <WorkItems item={item} key={item.id} />
+              <WorkItemsModal item={item} />
+            </div>
+          )
+        })}
       </div>
     </>
   )

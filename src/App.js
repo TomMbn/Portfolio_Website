@@ -6,11 +6,12 @@ import Experience from './components/experience/Experience';
 import Work from './components/project/Work';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 
 const App = () => {
   return (
-    <>
+    <LanguageProvider>
       <Header />
 
       <main className='main'>
@@ -21,8 +22,9 @@ const App = () => {
         <Contact />
         <Footer />
       </main>
-    </>
+    </LanguageProvider>
   );
 }
 
 export default App;
+

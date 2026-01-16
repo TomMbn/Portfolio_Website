@@ -4,66 +4,65 @@ import NinaCarducci from "../../assets/Resize/NinaCarducci.webp";
 import Kasa from "../../assets/Resize/Kasa.webp";
 import VieuxGrimoire from "../../assets/Resize/VieuxGrimoire.webp";
 
-export const projectsData = [
+export const getProjectsData = (t) => [
     {
         id: 1,
         image: Booki,
-        title: "Booki",
-        category: "Frontend", 
+        title: t('projects.booki.title'),
+        category: t('projects.categories.frontend'),
         github: "https://github.com/TomMbn/Project-2-HTML-CSS-",
-        description: "For this project, I created the homepage of Booki, a travel agency. The homepage allows users to view available accommodations in a chosen city and also explore the activities to do in that city. In this case, my task was limited to integration, so the user cannot select a specific city, the default city is Marseille",
+        description: t('projects.booki.description'),
         stack: "HTML, CSS"
     },
     {
         id: 2,
         image: SophieBuel,
-        title: "Sophie Buel",
-        category: "Frontend", 
+        title: t('projects.sophieBuel.title'),
+        category: t('projects.categories.frontend'),
         github: "https://github.com/TomMbn/Project-3-OpenClassrooms-JS-",
-        description: "This website is the online portfolio of Sophie Buel, an interior designer. The site allows her to showcase her work and also provides her with the ability to add new projects or remove existing ones by logging in and accessing an editing mode.",
+        description: t('projects.sophieBuel.description'),
         stack: "HTML, CSS, JavaScript"
     },
     {
         id: 3,
         image: NinaCarducci,
-        title: "Nina Carducci",
-        category: "Opti/Debug", 
+        title: t('projects.ninaCarducci.title'),
+        category: t('projects.categories.optiDebug'),
         github: "https://github.com/TomMbn/Project-5-Debug-Optimization",
-        description: "This website is the online portfolio of Nina Carducci, a photographer. The work I have done involved optimizing the site for SEO, accessibility, and performance, as well as debugging certain functionalities.",
+        description: t('projects.ninaCarducci.description'),
         stack: "HTML, CSS, JavaScript"
     },
     {
         id: 4,
         image: Kasa,
-        title: "Kasa",
-        category: "Frontend", 
+        title: t('projects.kasa.title'),
+        category: t('projects.categories.frontend'),
         github: "https://github.com/TomMbn/Projet-6---ReactJS",
-        description: "Kasa is a real estate rental application that allows users to see all available accommodations, as well as view each specific property to obtain more information about it.",
+        description: t('projects.kasa.description'),
         stack: "ReactJS, CSS"
     },
     {
         id: 5,
         image: VieuxGrimoire,
-        title: "Mon Vieux Grimoire",
-        category: "Backend", 
+        title: t('projects.vieuxGrimoire.title'),
+        category: t('projects.categories.backend'),
         github: "https://github.com/TomMbn/TomMbn-Projet-7---NodeJS-Express-MongoDB",
-        description: "Mon Vieux Grimoire is a book rating website that allows users to create an account, log in, add a book, edit it, delete it, and rate the books added by other users.",
+        description: t('projects.vieuxGrimoire.description'),
         stack: "NodeJS, Express, MongoDB"
     }
-
 ]
 
-export const projectsCategories = [
+export const getProjectsCategories = (t) => [
     {
-        name: "all"
+        name: t('projects.categories.all')
     },
     {
-        name: "Frontend"
+        name: t('projects.categories.frontend')
     },
     {
-        name: "Backend"
+        name: t('projects.categories.backend')
     },
     {
-        name: "Opti/Debug"
+        name: t('projects.categories.optiDebug')
     }
 ]
