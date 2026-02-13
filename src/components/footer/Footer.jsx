@@ -1,5 +1,6 @@
 import "./footer.css"
 import { trackExternalLink } from "../../utils/analytics";
+import Icon from "../common/Icon";
 
 
 const Footer = () => {
@@ -31,7 +32,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         onClick={() => trackExternalLink('https://www.linkedin.com/in/tommauboussin', 'LinkedIn')}
                     >
-                        <i className="uil uil-linkedin-alt"></i>
+                        <Icon name="linkedin-alt" />
                         <span className="visually-hidden">LinkedIn profile of Tom Mauboussin</span>
                     </a>
                     <a
@@ -42,7 +43,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         onClick={() => trackExternalLink('https://github.com/TomMbn', 'GitHub Profile')}
                     >
-                        <i className="uil uil-github-alt"></i>
+                        <Icon name="github-alt" />
                         <span className="visually-hidden">GitHub profile of Tom Mauboussin</span>
                     </a>
                 </div>

@@ -5,7 +5,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fond semi-transparent */
   display: none;
   align-items: center;
   justify-content: center;
@@ -31,12 +32,27 @@
 .modalContentHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
+/* ... */
+
 /* Bouton de fermeture */
-.uil-times {
+.modalClose {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 2rem;
+  color: var(--title-color);
+  transition: .3s;
+  display: flex !important;
+  /* Force flex to align SVG inside */
+  align-items: center;
+  line-height: 1;
+}
+
+.modalClose:hover {
+  color: var(--title-color-dark);
+  transform: scale(1.1);
 }
 
 /* Style de l'image du projet */
@@ -50,7 +66,7 @@
 /* Style des titres */
 .modalContent h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 /* Style de la description */

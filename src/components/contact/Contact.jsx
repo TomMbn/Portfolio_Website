@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from "../../hooks/useTranslation";
 import { trackContactSubmission, trackExternalLink } from "../../utils/analytics";
+import Icon from "../common/Icon";
 
 
 const Contact = () => {
@@ -27,7 +28,7 @@ const Contact = () => {
                 <div className="contactContent">
                     <div className="contactInfo">
                         <div className="contactCard">
-                            <i className="bx bx-mail-send contactCardIcon"></i>
+                            <Icon name="mail-send" className="contactCardIcon" />
                             <h3 className="contactCardTitle">{t('contact.email')}</h3>
                             <span className="contactCardData">tom.mauboussin@icloud.com</span>
                             <a
@@ -38,11 +39,11 @@ const Contact = () => {
                                 onClick={() => trackExternalLink('mailto:tom.mauboussin@icloud.com', 'Email')}
                             >
                                 {t('contact.writeMe')}
-                                <i className="bx bx-right-arrow-alt"></i>
+                                <Icon name="right-arrow-alt" />
                             </a>
                         </div>
                         <div className="contactCard">
-                            <i className="bx bxl-whatsapp contactCardIcon"></i>
+                            <Icon name="whatsapp" className="contactCardIcon" />
                             <h3 className="contactCardTitle">{t('contact.phone')}</h3>
                             <span className="contactCardData">+33 7 54 83 24 99</span>
                             <a
@@ -53,7 +54,7 @@ const Contact = () => {
                                 onClick={() => trackExternalLink('https://api.whatsapp.com/send?phone=33754832499', 'WhatsApp')}
                             >
                                 {t('contact.textMe')}
-                                <i className="bx bx-right-arrow-alt"></i>
+                                <Icon name="right-arrow-alt" />
                             </a>
                         </div>
                     </div>

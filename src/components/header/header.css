@@ -159,12 +159,24 @@
   .navToggle {
     font-size: 1.1rem;
     cursor: pointer;
+    display: block !important;
   }
 
   .navIcon,
-  .navClose,
-  .navToggle {
+  .navClose {
     display: block;
+  }
+
+  .languageToggle {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .languageToggle:hover {
+    box-shadow: none;
   }
 }
 

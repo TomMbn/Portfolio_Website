@@ -1,4 +1,5 @@
 import { trackProjectClick, trackExternalLink } from '../../utils/analytics';
+import Icon from '../common/Icon';
 
 const openModal = (item) => {
   const modal = document.getElementById(item.id)
@@ -9,7 +10,7 @@ const openModal = (item) => {
 const WorkItems = ({ item }) => {
   return (
     <div className="workCard" key={item.id} onClick={() => openModal(item)}>
-      <img src={item.image} alt={item.title + " work screenshot"} className="workImg" />
+      <img src={item.image} alt={item.title + " work screenshot"} className="workImg" loading="lazy" />
       <h3 className="workTitle">{item.title}</h3>
       <a
         href={item.github}
@@ -21,7 +22,7 @@ const WorkItems = ({ item }) => {
           trackExternalLink(item.github, `GitHub - ${item.title}`);
         }}
       >
-        Source code for {item.title} on GitHub <i className='bx bx-right-arrow-alt workButtonIcon'></i>
+        Source code for {item.title} on GitHub <Icon name="right-arrow-alt" className="workButtonIcon" />
       </a>
     </div>
   )

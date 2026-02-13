@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { getProjectsData, getProjectsCategories } from './Data'
 import WorkItems from './WorkItems'
 import WorkItemsModal from './WorkItemsModal'
@@ -7,8 +6,8 @@ import { useTranslation } from '../../hooks/useTranslation'
 
 const Works = () => {
   const { t } = useTranslation();
-  const projectsData = getProjectsData(t);
-  const projectsCategories = getProjectsCategories(t);
+  const projectsData = useMemo(() => getProjectsData(t), [t]);
+  const projectsCategories = useMemo(() => getProjectsCategories(t), [t]);
 
   const [item, setItem] = useState({ name: t('projects.categories.all') });
   const [projects, setProjects] = useState([]);

@@ -1,11 +1,11 @@
-import { useContext } from 'react';
+import { useContext, useCallback } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
 import { translations } from '../translations';
 
 export const useTranslation = () => {
     const { language } = useContext(LanguageContext);
 
-    const t = (key) => {
+    const t = useCallback((key) => {
         const keys = key.split('.');
         let value = translations[language];
 
@@ -15,7 +15,7 @@ export const useTranslation = () => {
         }
 
         return value;
-    };
+    }, [language]);
 
     return { t, language };
 };

@@ -1,5 +1,6 @@
 import "./experience.css";
 import { useTranslation } from "../../hooks/useTranslation";
+import Icon from "../common/Icon";
 
 const Experience = () => {
     const { t } = useTranslation();
@@ -11,27 +12,27 @@ const Experience = () => {
 
             <div className="experienceContainer container grid">
                 <div className="experienceContent">
-                    <i className="uil uil-briefcase-alt experienceIcon"></i>
+                    <Icon name="briefcase-alt" className="experienceIcon" />
 
                     <h3 className="experienceTitle">{t('experience.jobTitle')}</h3>
                     <span className="experienceSubtitle">{t('experience.company')}</span>
 
                     <div className="experienceDate">
-                        <i className="uil uil-calendar-alt"></i>
+                        <Icon name="calendar-alt" />
                         {t('experience.date')}
                     </div>
 
                     <div className="experienceDescription">
                         <div className="experienceItem">
-                            <i className="uil uil-check-circle experienceItemIcon"></i>
+                            <Icon name="check-circle" className="experienceItemIcon" />
                             <p>{t('experience.task1')}</p>
                         </div>
                         <div className="experienceItem">
-                            <i className="uil uil-check-circle experienceItemIcon"></i>
+                            <Icon name="check-circle" className="experienceItemIcon" />
                             <p>{t('experience.task2')}</p>
                         </div>
                         <div className="experienceItem">
-                            <i className="uil uil-check-circle experienceItemIcon"></i>
+                            <Icon name="check-circle" className="experienceItemIcon" />
                             <p>{t('experience.task3')}</p>
                         </div>
                     </div>
