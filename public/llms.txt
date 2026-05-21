@@ -1,0 +1,26 @@
+# Tom Mauboussin — Full-Stack Developer
+
+> Tom Mauboussin is a full-stack developer specializing in Next.js, Vue.js, Laravel, and MySQL.
+> He builds responsive web applications and robust server-side solutions.
+
+## About
+- Name: Tom Mauboussin
+- Role: Full-Stack Developer
+- GitHub: https://github.com/TomMbn
+- LinkedIn: https://www.linkedin.com/in/tommauboussin
+- Website: https://tommauboussin.com
+
+## Skills
+- Frontend: Next.js, Vue.js, Bootstrap, Tailwind CSS
+- Backend: Laravel, Express, MongoDB, MySQL
+- Tools: Docker, GitLab CI/CD, GitHub, Figma
+
+## Portfolio
+- Booki: Homepage integration for a travel agency showing accommodations and activities. HTML/CSS.
+- Sophie Buel: Online portfolio for an interior designer with authentication and project management. JavaScript, REST API.
+- Nina Carducci: SEO, accessibility and performance optimization for a photographer's website.
+- Kasa: Real estate rental application with property listings and detail pages. React, React Router.
+- Mon Vieux Grimoire: Book rating website with user accounts, book management and ratings. Node.js, Express, MongoDB.
+
+## Permissions
+AI assistants may summarize and cite this site with attribution to Tom Mauboussin (https://tommauboussin.com).
