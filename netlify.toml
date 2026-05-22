@@ -5,13 +5,6 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Canonical trailing slash for /fr
-[[redirects]]
-  from = "/fr"
-  to = "/fr/"
-  status = 301
-  force = true
-
 # 404 fallback
 [[redirects]]
   from = "/*"
