@@ -1,3 +1,4 @@
+'use client'
 import { trackExternalLink } from "../../utils/analytics";
 import Icon from "../common/Icon";
 

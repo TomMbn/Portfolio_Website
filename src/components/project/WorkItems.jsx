@@ -1,3 +1,4 @@
+'use client'
 import { trackProjectClick, trackExternalLink } from '../../utils/analytics';
 import Icon from '../common/Icon';
 

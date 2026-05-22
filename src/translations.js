@@ -16,7 +16,7 @@ export const translations = {
             subtitle: "Full Stack Developer",
             description: "My name is Tom Mauboussin and I'm a Full Stack developer. I can develop dynamic and responsive user interfaces. On the back end, I can create robust server-side applications. Additionally, I have expertise in working with databases, ensuring efficient data storage and retrieval for seamless application performance. Through my skills in Full Stack development, I can seamlessly integrate front-end and back-end technologies to deliver scalable and efficient solutions.",
             contactButton: "Contact me",
-            downloadCV: "Download CV"
+            downloadCV: "Download Resume"
         },
 
         // Skills Section

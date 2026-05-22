@@ -1,8 +1,8 @@
 import "./skills.css"
-import { useTranslation } from "../../hooks/useTranslation";
+import { getT } from "../../utils/getTranslation";
 
-const Skills = () => {
-    const { t } = useTranslation();
+const Skills = ({ lang }) => {
+    const t = getT(lang);
 
     return (
         <section className="skills section" id="skills">

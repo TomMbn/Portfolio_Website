@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import "./workItemsModal.css"
 import Icon from '../common/Icon';

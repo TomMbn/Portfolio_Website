@@ -1,13 +1,14 @@
+'use client'
 import "./contact.css";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { useTranslation } from "../../hooks/useTranslation";
+import { getT } from "../../utils/getTranslation";
 import { trackContactSubmission, trackExternalLink } from "../../utils/analytics";
 import Icon from "../common/Icon";
 
 
-const Contact = () => {
-    const { t } = useTranslation();
+const Contact = ({ lang }) => {
+    const t = getT(lang);
     const form = useRef();
 
     const sendEmail = (e) => {

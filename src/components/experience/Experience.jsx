@@ -1,9 +1,9 @@
 import "./experience.css";
-import { useTranslation } from "../../hooks/useTranslation";
+import { getT } from "../../utils/getTranslation";
 import Icon from "../common/Icon";
 
-const Experience = () => {
-    const { t } = useTranslation();
+const Experience = ({ lang }) => {
+    const t = getT(lang);
 
     return (
         <section className="experience section" id="experience">

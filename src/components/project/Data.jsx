@@ -1,8 +1,8 @@
-import Booki from "../../assets/Resize/bookiIMG.webp";
-import SophieBuel from "../../assets/Resize/SophieBuel.webp";
-import NinaCarducci from "../../assets/Resize/NinaCarducci.webp";
-import Kasa from "../../assets/Resize/Kasa.webp";
-import VieuxGrimoire from "../../assets/Resize/VieuxGrimoire.webp";
+const Booki = '/assets/Resize/bookiIMG.webp';
+const SophieBuel = '/assets/Resize/SophieBuel.webp';
+const NinaCarducci = '/assets/Resize/NinaCarducci.webp';
+const Kasa = '/assets/Resize/Kasa.webp';
+const VieuxGrimoire = '/assets/Resize/VieuxGrimoire.webp';
 
 export const getProjectsData = (t) => [
     {
