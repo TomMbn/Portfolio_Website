@@ -94,6 +94,92 @@
     "dateModified": "2026-05-22T00:00:00+00:00"
   }
   </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Tom Mauboussin — Full-Stack Developer",
+      "item": "https://tommauboussin.com/"
+    }]
+  }
+  </script>
+
+  <!-- Structured Data: Portfolio Projects -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Portfolio Projects — Tom Mauboussin",
+    "author": { "@id": "https://tommauboussin.com/#person" },
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Mon Vieux Grimoire",
+          "description": "Book rating website with user accounts, book management and ratings system.",
+          "programmingLanguage": ["Node.js", "Express", "MongoDB"],
+          "codeRepository": "https://github.com/TomMbn/Mon-Vieux-Grimoire",
+          "author": { "@id": "https://tommauboussin.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Kasa",
+          "description": "Real estate rental SPA with dynamic property listings and detail pages.",
+          "programmingLanguage": ["React", "React Router"],
+          "codeRepository": "https://github.com/TomMbn/Kasa",
+          "author": { "@id": "https://tommauboussin.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Nina Carducci",
+          "description": "SEO, accessibility and performance optimization for a photographer's website.",
+          "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+          "codeRepository": "https://github.com/TomMbn/Nina-Carducci",
+          "author": { "@id": "https://tommauboussin.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Sophie Bluel",
+          "description": "Interactive portfolio for an interior designer with authentication and project management via REST API.",
+          "programmingLanguage": ["JavaScript", "REST API"],
+          "codeRepository": "https://github.com/TomMbn/Portfolio-Sophie-Bluel",
+          "author": { "@id": "https://tommauboussin.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Booki",
+          "description": "Travel agency homepage integration presenting accommodations and activities.",
+          "programmingLanguage": ["HTML", "CSS"],
+          "codeRepository": "https://github.com/TomMbn/booki",
+          "author": { "@id": "https://tommauboussin.com/#person" }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -101,6 +187,87 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM4LLNVB" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Static fallback for crawlers and no-JS environments -->
+  <noscript>
+    <header>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Tom Mauboussin</h1>
+        <p>Full Stack Developer</p>
+        <p>I'm Tom Mauboussin, a Full Stack developer specializing in Next.js, Vue.js, Laravel and MySQL.
+        I design modern, dynamic and responsive user interfaces while building robust and performant
+        back-end applications. My Full Stack approach allows me to efficiently integrate front-end and
+        back-end technologies to create reliable, scalable solutions adapted to users' needs.</p>
+        <a href="/tom-mauboussin-resume.pdf">Download CV</a>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <h3>Frontend</h3>
+        <p>Next.js, Vue.js, React, Bootstrap, Tailwind CSS, HTML, CSS, JavaScript, TypeScript</p>
+        <h3>Backend</h3>
+        <p>Laravel, Express, Node.js, MongoDB, MySQL, REST API</p>
+        <h3>Tools</h3>
+        <p>Docker, GitLab CI/CD, GitHub, Figma, Git</p>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+
+        <article>
+          <h3>Mon Vieux Grimoire</h3>
+          <p>Book rating website allowing users to create an account, log in, add a book, edit it,
+          delete it and rate books added by other users.</p>
+          <p>Stack: Node.js, Express, MongoDB</p>
+        </article>
+
+        <article>
+          <h3>Kasa</h3>
+          <p>Real estate rental application with property listings and detail pages.
+          Dynamic navigation between listings.</p>
+          <p>Stack: React, React Router</p>
+        </article>
+
+        <article>
+          <h3>Nina Carducci</h3>
+          <p>SEO, accessibility and performance optimization for a photographer's website.
+          Significant Lighthouse score improvement.</p>
+          <p>Stack: HTML, CSS, JavaScript</p>
+        </article>
+
+        <article>
+          <h3>Sophie Bluel</h3>
+          <p>Interactive portfolio for an interior designer with authentication
+          and project management via REST API.</p>
+          <p>Stack: JavaScript, REST API</p>
+        </article>
+
+        <article>
+          <h3>Booki</h3>
+          <p>Travel agency homepage integration presenting accommodations and activities.</p>
+          <p>Stack: HTML, CSS</p>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: tom.mauboussin@gmail.com</p>
+        <a href="https://www.linkedin.com/in/tommauboussin">LinkedIn</a>
+        <a href="https://github.com/TomMbn">GitHub</a>
+      </section>
+    </main>
+  </noscript>
+
   <div id="root"></div>
 
 </body>

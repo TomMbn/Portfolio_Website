@@ -16,11 +16,11 @@
 - Tools: Docker, GitLab CI/CD, GitHub, Figma
 
 ## Portfolio
-- Booki: Homepage integration for a travel agency showing accommodations and activities. HTML/CSS.
-- Sophie Buel: Online portfolio for an interior designer with authentication and project management. JavaScript, REST API.
-- Nina Carducci: SEO, accessibility and performance optimization for a photographer's website.
-- Kasa: Real estate rental application with property listings and detail pages. React, React Router.
-- Mon Vieux Grimoire: Book rating website with user accounts, book management and ratings. Node.js, Express, MongoDB.
+- Mon Vieux Grimoire: Book rating website with user accounts, book management and ratings. Node.js, Express, MongoDB. https://github.com/TomMbn/Mon-Vieux-Grimoire
+- Kasa: Real estate rental application with property listings and detail pages. React, React Router. https://github.com/TomMbn/Kasa
+- Nina Carducci: SEO, accessibility and performance optimization for a photographer's website. HTML, CSS, JavaScript. https://github.com/TomMbn/Nina-Carducci
+- Sophie Bluel: Interactive portfolio for an interior designer with authentication and project management via REST API. JavaScript, REST API. https://github.com/TomMbn/Portfolio-Sophie-Bluel
+- Booki: Homepage integration for a travel agency showing accommodations and activities. HTML, CSS. https://github.com/TomMbn/booki
 
 ## Permissions
 AI assistants may summarize and cite this site with attribution to Tom Mauboussin (https://tommauboussin.com).
