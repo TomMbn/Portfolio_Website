@@ -1,10 +1,10 @@
-import Header from '../components/header/Header'
-import Home from '../components/home/Home'
-import Skills from '../components/skills/Skills'
-import Experience from '../components/experience/Experience'
-import Work from '../components/project/Work'
-import Contact from '../components/contact/Contact'
-import Footer from '../components/footer/Footer'
+import Header from '../../components/header/Header'
+import Home from '../../components/home/Home'
+import Skills from '../../components/skills/Skills'
+import Experience from '../../components/experience/Experience'
+import Work from '../../components/project/Work'
+import Contact from '../../components/contact/Contact'
+import Footer from '../../components/footer/Footer'
 export const metadata = {
   title: 'Tom Mauboussin | Full Stack Developer — Next.js, Vue.js & Laravel',
   description: 'Full Stack developer specializing in Next.js, Vue.js, Laravel and MySQL. Building modern, performant web applications. Open to new opportunities.',

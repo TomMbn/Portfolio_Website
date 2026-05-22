@@ -1,4 +1,4 @@
-import './globals.css'
+import '../globals.css'
 import Script from 'next/script'
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: ['/og-image.jpg'] },
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayoutEN({ children }) {
   return (
     <html lang="en">
       <head>

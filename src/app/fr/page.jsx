@@ -5,8 +5,6 @@ import Experience from '../../components/experience/Experience'
 import Work from '../../components/project/Work'
 import Contact from '../../components/contact/Contact'
 import Footer from '../../components/footer/Footer'
-import LangSetup from '../../components/LangSetup'
-
 export const metadata = {
   title: 'Tom Mauboussin | Développeur Full Stack — Next.js, Vue.js & Laravel',
   description: 'Développeur Full Stack spécialisé en Next.js, Vue.js, Laravel et MySQL. Création d\'applications web modernes et performantes. Ouvert aux nouvelles opportunités.',
@@ -40,7 +38,6 @@ export const metadata = {
 export default function PageFR() {
   return (
     <>
-      <LangSetup lang="fr" />
       <Header lang="fr" />
       <main className="main">
         <Home lang="fr" />
