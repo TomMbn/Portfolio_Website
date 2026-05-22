@@ -4,3 +4,22 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Canonical trailing slash for /fr
+[[redirects]]
+  from = "/fr"
+  to = "/fr/"
+  status = 301
+  force = true
+
+# SPA fallback for /fr/* routes
+[[redirects]]
+  from = "/fr/*"
+  to = "/index.html"
+  status = 200
+
+# SPA fallback catch-all
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
